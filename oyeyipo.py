@@ -1,12 +1,14 @@
 from collections import namedtuple
 
+__version__ = '0.0.1dev0'
+
 fname = "Olawale"
 lname = "Oyeyipo"
-print(fname, lname)
+full_name = "%s %s" % (fname, lname)
 
-Rec = namedtuple("Social", "Stackoverflow Github LinkedIn")
-social = Rec(
-    Stackoverflow="www.stackoverflow.com",
-    Github="www.github.com/oyeyipo",
-    LinkedIn="linkedin.com/oyeyipo",
+_Rec = namedtuple("Social", "Stackoverflow Github LinkedIn")
+social = _Rec(
+    stackoverflow="www.stackoverflow.com",
+    github="www.github.com/oyeyipo",
+    linkedin="linkedin.com/oyeyipo",
 )
