@@ -12,10 +12,12 @@ fname = "Olawale"
 lname = "Oyeyipo"
 full_name = "%s %s" % (fname, lname)
 tel = ["+2348090539375", "+2349038831715"]
+site = "http://www.oyeyipo.com"
+pypi = "https://pypi.org/user/oyeyipo/"
 
-_Rec = namedtuple("Socials", "stackoverflow github linkedin")
+_Socials = namedtuple("Socials", "stackoverflow github linkedin")
 
-socials = _Rec(
+socials = _Socials(
     stackoverflow="https://stackoverflow.com/users/7024331/oyeyipo",
     github="https://github.com/oyeyipo",
     linkedin="https://www.linkedin.com/in/oyeyipowale/",
